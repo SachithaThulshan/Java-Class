@@ -7,8 +7,6 @@ public class FindStar {
         int[][] star = new int[a][a];
         Random random = new Random();
 
-//        int starValue = random.nextInt(11);
-
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < a; j++) {
                 star[i][j] = random.nextInt(11);
