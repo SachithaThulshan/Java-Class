@@ -43,6 +43,6 @@ public class FindStar {
                 System.out.print(outStar[i][j]);
             }
             System.out.println();
-                    }
+        }
     }
 }
