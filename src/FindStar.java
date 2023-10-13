@@ -5,6 +5,7 @@ public class FindStar {
 
         int a= 25;
         int[][] star = new int[a][a];
+        String[][] outStar = new String[a][a];
         Random random = new Random();
 
         for (int i = 0; i < a; i++) {
@@ -32,12 +33,20 @@ public class FindStar {
 
                 if (star[i][j] < star[i][j - 1] && star[i][j] < star[i - 1][j - 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i][j + 1]
                         && star[i][j] < star[i - 1][j + 1] && star[i][j] < star[i + 1][j + 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i + 1][j])
-                    System.out.print("* ");
+                    outStar[i][j] = "* ";
                 else
-                    System.out.print("  ");
+                    outStar[i][j] = "  ";
+
+            }
+
+        }
+        for (int i = 1; i < 24; i++) {
+            for (int j = 1; j < 24; j++) {
+                System.out.print(outStar[i][j]);
 
             }
             System.out.println();
         }
+
     }
 }
