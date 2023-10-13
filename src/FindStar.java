@@ -36,17 +36,13 @@ public class FindStar {
                     outStar[i][j] = "* ";
                 else
                     outStar[i][j] = "  ";
-
             }
-
         }
         for (int i = 1; i < 24; i++) {
             for (int j = 1; j < 24; j++) {
                 System.out.print(outStar[i][j]);
-
             }
             System.out.println();
         }
-
     }
 }
