@@ -16,59 +16,30 @@ public class FindStar {
         }
 
         for (int i = 1; i < a-1; i+=1) {
-            for (int j = 1; j < a-1; j+=3) {
-
-                int current_position = star[i][j];
-                int left_cell = star[i][j-1];
-                int left_top_cell = star[i-1][j-1];
-                int left_bottom_cell = star[i-1][j];
-
-                int right_cell = star[i][j+1];
-                int right_top_cell = star[i-1][j+1];
-                int right_bottom_cell = star[i+1][j+1];
-
-                int up_cell = star[i-1][j];
-                int bottom_cell = star[i+1][j];
+            for (int j = 1; j < a-1; j+=1) {
 
 
-                if (star[i][j] < left_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] < left_top_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] < left_bottom_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] < right_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] <= current_position)
-                    System.out.print("* ");
-                if (star[i][j] < right_top_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] < right_bottom_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
-                if (star[i][j] < up_cell)
-                    System.out.print("* ");
-                else
-                    System.out.print("| ");
+//                int current_position = star[i][j];
+//                int left_cell = star[i][j - 1];
+//                int left_top_cell = star[i - 1][j - 1];
+//                int left_bottom_cell = star[i - 1][j];
+//
+//                int right_cell = star[i][j + 1];
+//                int right_top_cell = star[i - 1][j + 1];
+//                int right_bottom_cell = star[i + 1][j + 1];
+//
+//                int up_cell = star[i - 1][j];
+//                int bottom_cell = star[i + 1][j];
 
-                if (star[i][j] < bottom_cell)
+
+                if (star[i][j] < star[i][j - 1] && star[i][j] < star[i - 1][j - 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i][j + 1]
+                        && star[i][j] < star[i - 1][j + 1] && star[i][j] < star[i + 1][j + 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i + 1][j])
                     System.out.print("* ");
                 else
-                    System.out.print("| ");
+                    System.out.print("  ");
 
             }
-            System.out.println(" ");
+            System.out.println();
         }
     }
 }
