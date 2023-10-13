@@ -31,8 +31,8 @@ public class FindStar {
 //                int bottom_cell = star[i + 1][j];
 
 
-                if (star[i][j] < star[i][j - 1] && star[i][j] < star[i - 1][j - 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i][j + 1]
-                        && star[i][j] < star[i - 1][j + 1] && star[i][j] < star[i + 1][j + 1] && star[i][j] < star[i - 1][j] && star[i][j] < star[i + 1][j])
+                if (star[i][j] > star[i][j - 1] && star[i][j] > star[i - 1][j - 1] && star[i][j] > star[i - 1][j] && star[i][j] > star[i][j + 1]
+                        && star[i][j] > star[i - 1][j + 1] && star[i][j] > star[i + 1][j + 1] && star[i][j] > star[i - 1][j] && star[i][j] > star[i + 1][j])
                     outStar[i][j] = "* ";
                 else
                     outStar[i][j] = "  ";
@@ -43,6 +43,6 @@ public class FindStar {
                 System.out.print(outStar[i][j]);
             }
             System.out.println();
-                    }
+        }
     }
 }
