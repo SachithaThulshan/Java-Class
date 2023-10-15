@@ -21,7 +21,7 @@ public class FindStar {
                 
 //                int left_cell = star[i][j - 1];
 //                int left_top_cell = star[i - 1][j - 1];
-//                int left_bottom_cell = star[i - 1][j];
+//                int left_bottom_cell = star[[i + 1][j - 1];
 //
 //                int right_cell = star[i][j + 1];
 //                int right_top_cell = star[i - 1][j + 1];
@@ -30,7 +30,7 @@ public class FindStar {
 //                int up_cell = star[i - 1][j];
 //                int bottom_cell = star[i + 1][j];
 
-                if (star[i][j] > star[i][j - 1] && star[i][j] > star[i - 1][j - 1] && star[i][j] > star[i - 1][j] && star[i][j] > star[i][j + 1]
+                if (star[i][j] > star[i][j - 1] && star[i][j] > star[i - 1][j - 1] && star[i][j] > star[i + 1][j - 1] && star[i][j] > star[i][j + 1]
                         && star[i][j] > star[i - 1][j + 1] && star[i][j] > star[i + 1][j + 1] && star[i][j] > star[i - 1][j] && star[i][j] > star[i + 1][j])
                     outStar[i][j] = "* ";            //check center postion and surroud cell 8
                 else
