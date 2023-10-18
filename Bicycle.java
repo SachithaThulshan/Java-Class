@@ -1,3 +1,4 @@
+// Bicycle
 public class Bicycle {
     private final String name = "Bicycle";
     private final String brand = "Lumala";
@@ -13,6 +14,7 @@ public class Bicycle {
         return currentWeight;
     }
 }
+
 // Circle
 class Circle{
     private String name;
@@ -30,8 +32,8 @@ class Circle{
         return (Math.PI * radius * radius);
     }
 }
-// House
 
+// House
 class House {
     private String name;
     private String address;
@@ -46,8 +48,8 @@ class House {
         return rooms;
     }
 }
-// radio
 
+// radio
 class Radio{
     private String name;
     private String brand;
