@@ -25,3 +25,10 @@ public class array4 {
 
     }
 }
+//this are one stored(temp) using
+
+// int temp = code[swap1-1];
+//         System.out.println(temp);
+
+//         code[swap1-1]=code[swap2-1];
+//         code[swap2-1]=temp;
