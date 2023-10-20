@@ -1,20 +1,25 @@
-// Bicycle
 public class Bicycle {
-    private final String name = "Bicycle";
+    final String name = "Bicycle";
     private final String brand = "Lumala";
     private String color;
     private double speed;
-    private double currentWeight;
+    double currentWeight = 50;
 
-    public double setSpeed(double goSpeed){
-        speed = goSpeed;
-        return goSpeed;
+
+    public void setSpeed(double Speed){
+        this.speed = Speed;
     }
-    public double setCurrentWeight(){
+    public void getSpeed(){
+        System.out.println(speed);
+    }
+    public double Weight(){
         return currentWeight;
     }
-}
 
+    public void getName() {
+        System.out.println(name);
+    }
+}
 // Circle
 class Circle{
     private String name;
@@ -23,7 +28,10 @@ class Circle{
     private double radius;
 
     public void setRadius(double radius){
-        radius = 10;
+        this.radius = radius;
+    }
+    public double getRadius(){
+        return radius;
     }
     public double getDiameter(){
         return radius * 2;
@@ -32,8 +40,8 @@ class Circle{
         return (Math.PI * radius * radius);
     }
 }
-
 // House
+
 class House {
     private String name;
     private String address;
@@ -48,8 +56,8 @@ class House {
         return rooms;
     }
 }
-
 // radio
+
 class Radio{
     private String name;
     private String brand;
@@ -57,12 +65,17 @@ class Radio{
     private double volume;
     private double channel;
 
-    public void increaseVolume(int upvVolume,int downVolume){
-        volume = upvVolume;
-        volume = downVolume;
+    public void increaseVolume(int upvVolume){
+        this.volume = upvVolume;
+
     }
-    public void tuneChannel(double tuneUp, double tuneDown){
+    public void getVolume(){
+        System.out.println(volume);
+    }
+    public void tuneChannel(double tuneUp){
         channel = tuneUp;
-        this.channel = tuneDown;
+    }
+    public void getChannel(){
+        System.out.println(channel);
     }
 }
