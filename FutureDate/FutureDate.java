@@ -66,39 +66,3 @@ public class FutureDate {
         return year1;
     }
 }
-
-
-
-
-
-
-
-
-
-//        if (month >= 12) {
-//            year += month / 12;
-//        }
-//        else
-//            month = month % 12;
-//        if ( day >= 30) {
-//            month += day / 30;
-//
-//        }
-//        else {
-//            day = day % 30;
-//
-//        }
-//    }
-//    public String getDate(){
-//
-//        String futureDates = String.valueOf(year)+ String.valueOf(month) + String.valueOf(day);
-//        return futureDates;
-//    }
-//}
-////class Test{
-////    public static void main(String[] args) {
-////        FutureDate futureDate = new FutureDate();
-////        futureDate.setDate(0,0,25);
-////        System.out.println(futureDate.getDate());
-////    }
-////}
