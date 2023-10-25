@@ -8,6 +8,3 @@ public class Test1 {
         System.out.println(futureDate.getDate());
     }
 }
-
-//d = "2023/40/43"
-//String a[] = d.split("/")
