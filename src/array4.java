@@ -7,21 +7,19 @@ public class array4 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("{10,20,30,40,50}");
-        System.out.println("Enter swap number 1 : ");
+        System.out.print("Enter swap number 1 : ");
         int swap1 = scanner.nextInt();
-        System.out.println("Enter swap number 2 : ");
+        System.out.print("Enter swap number 2 : ");
         int swap2 = scanner.nextInt();
 
-        int store2 = code[swap2-1];
-        int store1 = code[swap1-1];
+        int temp = code[swap1-1];
+        System.out.println(temp);
 
-        code[swap1-1]=store2;
-        code[swap2-1]=store1;
+        code[swap1-1]=code[swap2-1];
+        code[swap2-1]=temp;
 
         for (int i : code) {
             System.out.print(i + " ");
         }
-
-
     }
 }
