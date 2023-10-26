@@ -1,6 +1,6 @@
 public class CalculateAge {
     String tyear = "1999";
-    String tmonth = "11";
+    String tmonth = "10";
     String tday = "04";
 
     String year;
